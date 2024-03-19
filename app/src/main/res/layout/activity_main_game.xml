@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".MainGame">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#0D2D47"
+        android:text="@string/x"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#0D2D47"
+        android:text="@string/o"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/borders"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button1" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button2" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button3" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLines" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/b4"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button4" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b5"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button5" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b6"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button6" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLines" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/b7"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button7" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b8"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button8" />
+
+            <View style="@style/verticalLines" />
+
+            <Button
+                android:id="@+id/b9"
+                style="@style/column"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/button9" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/player_2"
+        android:textColor="#AEABAB"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="476dp"
+        android:text="@string/player_1"
+        android:textColor="#AEABAB"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
